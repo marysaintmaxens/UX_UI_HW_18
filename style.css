@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Finnmark;
+    src: url(Finnmark/TTF/Finnmark-Regular.ttf);
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url(Download\ \ 295\ Helvetica\ Fonts/);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar  {
+    width: 95%;
+    margin: 0% auto;
+}
+
+header {
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.logo {
+    float: left;
+    padding: 4px 0;
+    height: 15%;
+    width: 15%;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+
+    position: relative;
+
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #3b3b3b;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #000000;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all 200ms ease-in-out;
+}
+
+nav a::hover::before {
+    width: 100%;
+}
+
+
+.homepageSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.main{
+   font-family: Finnmark;
+   width: 95%;
+   margin: 0% auto;
+   text-align: left; 
+}
+
+ /*
+.aboutMe {
+    margin: 100px auto;
+    width: 75%;
+}
+
+#headshot {
+        float: left;
+        margin-right: 40px;
+        padding-top: 100px;
+        margin-left: 200px;
+}
+*/
+
+
+.aboutMesection{
+    font-family: Finnmark;
+    height: 450px;
+    width: 100%;
+}
+
+#aboutMeh1 {
+    font-size: 32px;
+}
+
+#headshot{
+    margin-left: 150px;
+}
+
+/*
+#aboutMetext img{
+    float: right;
+}
+*/  
+
+.aboutMep{
+    font-size: 25px;
+}
+
+#scroll {
+    font-family: Helvetica;
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+.footer{
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+
+
+#getintouch {
+    font-size: 35px;
+    padding-left: 50px;
+    float: left;
+    width: auto;
+    margin: auto;
+}
+
+
+.footer h2{
+    font-family: Helvetica;
+    font-weight:lighter;
+    float: center;
+    width: auto;
+    margin: auto;
+    font-size: 18px;
+}
+
+.footer p{
+    float: right;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+}
+
+.footer button{
+    font-family: Helvetica;
+    font-size: 15px;
+    background-color: #000000;
+    color: #B7C9C9;
+    padding: 7px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+#@{
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+/*
+.homepageSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 85vh;
+}
+
+.footer{
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+    width: 95%;
+    margin: 0% auto;
+    text-align: center;
+}
+
+.footer h1{
+    font-size: 35px;
+}
